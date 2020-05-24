@@ -11,7 +11,7 @@ Ricard Trinchet Arnejo
 
 # 1. Domain Background
 
-[Arvato Bertelsmann] (https://en.wikipedia.org/wiki/Arvato) is a german services company that operates worldwide. In this project,
+[Arvato Bertelsmann](https://en.wikipedia.org/wiki/Arvato) is a german services company that operates worldwide. In this project,
 we analize data from a group of the company's customers, located in Germany. The main objective is to find some characteristics of the population of customers
 and then compare those characteristics with those of the general german population.
 
@@ -64,13 +64,13 @@ those who accept the offer and those who don't.
 
 For the first problem, a benchmark model would be the k-means algorithm, which is a widely used clustering technique. 
 
-For the second, we could take a look at the associated Kaggle competition's [Leaderboard] (https://www.kaggle.com/c/udacity-arvato-identify-customers/leaderboard).
+For the second, we could take a look at the associated Kaggle competition's [Leaderboard](https://www.kaggle.com/c/udacity-arvato-identify-customers/leaderboard).
 There, we see that most of the participants are scoring AUC (Area Under Curve) better than 0.7. That would be a good score to have at minimum and then try to improve it as much as possible.
 
 
 # 6. Evaluation Metrics
 
-For the first problem, it is harder to define a evaluation metric, as the success depends a lot on the data. Nevertheless, a metric like the [Silhouette] (https://en.wikipedia.org/wiki/Silhouette_(clustering)) could be helpful.
+For the first problem, it is harder to define a evaluation metric, as the success depends a lot on the data. Nevertheless, a metric like the [Silhouette](https://en.wikipedia.org/wiki/Silhouette_(clustering)) could be helpful.
 
 For the second, we will use the AUC, as it is the one used by the Kaggle competition associated.
 
