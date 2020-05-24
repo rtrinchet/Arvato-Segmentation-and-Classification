@@ -1,7 +1,9 @@
 # Capstone Proposal
 
 Machine Learning Engineer Nanodegree
+
 Ricard Trinchet Arnejo
+
 2020/05/24
 
 ---------
