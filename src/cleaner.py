@@ -37,8 +37,9 @@ def variable_deletion(df):
 
     df_clean = df.drop(vars_to_drop, axis = 1)
     print('Final df shape:', df_clean.shape)
-    return df_clean
-
+    
+    
+    return df_clean, vars_to_drop
 
 
 def categorical_clean(df):
@@ -59,11 +60,13 @@ def clean_data(df):
     # index
     df = df.set_index('LNR')
     
-    df_clean = variable_deletion(df)
+    df_clean, vars_to_drop = variable_deletion(df)
     
     df_clean = df_clean.drop('EINGEFUEGT_AM', axis = 1)
-    
+        
     df_clean = categorical_clean(df_clean)
     
     return df_clean
+
+
     

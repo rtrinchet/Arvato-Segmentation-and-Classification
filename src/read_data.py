@@ -5,16 +5,19 @@ import joblib
 
 from src.helpers import reduce_mem_usage
 
-def save_dict(dict_name):
+def save_dict(dictionary, dict_name):
     
     filepath = 'data/'+ dict_name + '.pickle'
     with open(filepath, 'wb') as handle:
-        pickle.dump(dict_name, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump(dictionary, handle, protocol=pickle.HIGHEST_PROTOCOL)
         
 def load_dict(filename):
     filepath = 'data/' + filename + '.pickle'
+    print(filepath)
+    
     with open(filepath, 'rb') as handle:
         loaded_dict = pickle.load(handle)
+
     return loaded_dict
 
 
@@ -50,7 +53,7 @@ def load_feather(filename):
     
     filepath = 'data/' + filename + '.ftr'
     
-    data = pd.read_feather(pingInfoFilePath, columns=None, use_threads=True)
+    data = pd.read_feather(filepath, columns=None, use_threads=True)
     print(f'Data loaded from to {filepath}')
     return data
 
